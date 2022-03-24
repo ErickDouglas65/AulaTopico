@@ -7,7 +7,22 @@
     <title>Tópicos Especiais de Sistema</title>
 </head>
 <body>
-    <h1>Página teste Tópicos Especiais de Sistemas</h1>
-    <p>Alteração da página</p>
+    <button>Clique em mim</button>
+
 </body>
+
+
+<script>
+    // aqui fica o JavaScript
+    function criarParagrafo() {
+        let para = document.createElement('p');
+        para.textContent = 'Você clicou no botão!';
+        document.body.appendChild(para);
+    }
+    const botoes = document.querySelectorAll('button');
+    for (var i = 0; i < botoes.length; i++) {
+        botoes[i].addEventListener('click', criarParagrafo);
+    }
+</script>
+
 </html>
